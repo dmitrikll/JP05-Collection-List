@@ -33,27 +33,27 @@ public class Solutions {
         return uniqueList;
     }
 
-    public void calcOccurrence (List<String> wordList){
+    public void calcOccurrence(List<String> wordList) {
         int[] wordCount = new int[wordList.size()];
 
-        for (int i=0; i<wordCount.length; i+=1){
+        for (int i = 0; i < wordCount.length; i += 1) {
             wordCount[i] = 0;
         }
 
-        for (int i=0; i<wordList.size(); i+=1){
+        for (int i = 0; i < wordList.size(); i += 1) {
             String word = wordList.get(i);
-            wordCount[i] +=1;
+            wordCount[i] += 1;
 
-            for (int j=i+1; j<wordList.size(); j+=1) {
-               if (word.equals(wordList.get(j))) {
-                   wordCount[i] +=1;
-                   wordList.remove(j);
-                   j-=1;
-               }
+            for (int j = i + 1; j < wordList.size(); j += 1) {
+                if (word.equals(wordList.get(j))) {
+                    wordCount[i] += 1;
+                    wordList.remove(j);
+                    j -= 1;
+                }
             }
         }
 
-        for (int i = 0; i< wordList.size(); i+=1) {
+        for (int i = 0; i < wordList.size(); i += 1) {
             System.out.println(wordList.get(i) + ": " + wordCount[i]);
         }
     }
