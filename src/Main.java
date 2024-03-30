@@ -42,8 +42,6 @@ public class Main {
 
         //TIP Task04
         solution.calcOccurrence(wordList);
-
-
     }
 }
 
