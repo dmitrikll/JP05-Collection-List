@@ -27,12 +27,20 @@ public class Main {
 
         System.out.println("The word " + targetWord + " appears " + countWord + " times in the list.");
 
-         //TIP task02
-        int[] arr = {1,2,3,4,5,6,7,};
+        //TIP task02
+        int[] arr = {1, 2, 3, 4, 5, 6, 7,};
         List<Integer> arrayToList = solution.arrayToList(arr);
 
         System.out.println("Array " + java.util.Arrays.toString(arr));
         System.out.println("List " + arrayToList);
+
+        //TIP task03
+        List<Integer> inputList = List.of(1, 2, 3, 5, 3, 4, 5, 2, 1, 7, 8, 9);
+        List<Integer> uniqueList = solution.findUnique(inputList);
+
+        System.out.println("Unique numbers: " + uniqueList);
+
+
     }
 }
 

@@ -21,4 +21,15 @@ public class Solutions {
         }
         return list;
     }
+
+    public List<Integer> findUnique(List<Integer> nums) {
+        List<Integer> uniqueList = new ArrayList<>();
+
+        for (Integer num : nums) {
+            if (!uniqueList.contains(num)) {
+                uniqueList.add(num);
+            }
+        }
+        return uniqueList;
+    }
 }
