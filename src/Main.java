@@ -31,14 +31,17 @@ public class Main {
         int[] arr = {1, 2, 3, 4, 5, 6, 7,};
         List<Integer> arrayToList = solution.arrayToList(arr);
 
-        System.out.println("Array " + java.util.Arrays.toString(arr));
-        System.out.println("List " + arrayToList);
+        System.out.println("Was Array " + java.util.Arrays.toString(arr));
+        System.out.println("Became List " + arrayToList);
 
         //TIP task03
         List<Integer> inputList = List.of(1, 2, 3, 5, 3, 4, 5, 2, 1, 7, 8, 9);
         List<Integer> uniqueList = solution.findUnique(inputList);
 
         System.out.println("Unique numbers: " + uniqueList);
+
+        //TIP Task04
+        solution.calcOccurrence(wordList);
 
 
     }
