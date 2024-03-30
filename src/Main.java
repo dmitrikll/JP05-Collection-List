@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -6,6 +7,7 @@ public class Main {
 
         Solutions solution = new Solutions();
 
+        //TIP Task01
         ArrayList<String> wordList = new ArrayList<>();
         wordList.add("mango");
         wordList.add("kiwi");
@@ -25,6 +27,12 @@ public class Main {
 
         System.out.println("The word " + targetWord + " appears " + countWord + " times in the list.");
 
+         //TIP task02
+        int[] arr = {1,2,3,4,5,6,7,};
+        List<Integer> arrayToList = solution.arrayToList(arr);
+
+        System.out.println("Array " + java.util.Arrays.toString(arr));
+        System.out.println("List " + arrayToList);
     }
 }
 

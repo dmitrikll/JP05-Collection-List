@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Solutions {
@@ -11,5 +12,13 @@ public class Solutions {
             }
         }
         return count;
+    }
+
+    public List<Integer> arrayToList(int[] arr) {
+        List<Integer> list = new ArrayList<>();
+        for (int num : arr) {
+            list.add(num);
+        }
+        return list;
     }
 }
