@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Phonebook {
 
-    private List<Entry> entries;
+    private final List<Entry> entries;
 
     public Phonebook() {
         entries = new ArrayList<>();
